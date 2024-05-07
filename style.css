@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --fonte-texto: "Roboto";
+    --titulo: "Oswald";
+}
+
+body {
+    font-family: var(--fonte-texto);
+    margin: 0 4em;
+}
+
+.titulo{
+    font-size: 24px;
+    font-family: var(--titulo);
+}
+
+#comentarios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.comentario {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.comentario p {
+    margin: 5px 0;
+}
+
+.comentario p:nth-child(2) { 
+    display: inline-block;
+    background: #F25E7A;
+    color: #ffffff;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.comentario p:nth-child(3) { 
+    display: inline-block;
+    background: #49b1b1;
+    color: #ffffff;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.comentario p:nth-child(4) { 
+    display: inline-block;
+    background: #39b84e;
+    color: #ffffff;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+#graficos {
+    display: flex;           
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center; 
+  }
+  
+  #graficos canvas {
+    max-width: 50%; 
+  }
+
+.subtitulo {
+    display: flex;          
+    align-items: center;
+    font-size: 18px;
+  }
+  
+.btnAlternar {
+    border: none;
+    background: none;
+    padding: 0;
+    margin-left: 10px;     
+    cursor: pointer;
+    font-size: 1.2em;      
+  }
+
+.titulo_seta {
+    display: flex;
+  }
+
+.oculto { 
+    visibility: hidden;
+  }
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MALTU + Google AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Análise dos Comentários do aplicativo Max utilizando MALTU + Google AI Studio</h1>
+    
+    <section class="graficos_section">
+        <div class="titulo_seta">
+            <h2 class="subtitulo">Gráficos</h2>
+            <button id="btnAlternarGraficos" class="btnAlternar">▼</button> 
+        </div>
+        <div id="graficos">
+            <canvas id="graficoTipo"></canvas>
+            <canvas id="graficoUsabilidade"></canvas>
+            <canvas id="graficoUX"></canvas>
+        </div>
+    </section>
+    <section class="comentarios_section">
+        <div class="titulo_seta">
+            <h2 class="subtitulo">Comentários Analisados (77)</h2>
+            <button id="btnAlternarComentarios" class="btnAlternar">▼</button> 
+        </div>
+        <div id="comentarios"></div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
